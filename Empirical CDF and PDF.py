@@ -7,7 +7,7 @@ def f(x):
 
 def F_n(x, t):                                                #Эмпирическое распределение
     N = len(x)
-    dist = (x < t).astype(int)
+    dist = (x <= t).astype(int)
     return sum(dist)/N
 
 quan = 10**6;
